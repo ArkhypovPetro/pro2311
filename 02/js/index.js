@@ -17,11 +17,13 @@ else if (operationNumber == '*') {
     console.log('Multiplie value:', result);
 }
 else if (operationNumber == '/') {
+  if (secondNumber !== 0) {
     result = firstNumber / secondNumber;
     console.log('Division value:', result);
-    if (secondNumber === 0) {
-        alert('Error');
-    }
+  }
+  else{
+    alert('Wrong operation, you cannot devide on zero')
+  }
 }
 else {
     console.log('Operation not found');

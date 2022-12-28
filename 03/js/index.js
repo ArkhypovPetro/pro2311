@@ -25,14 +25,16 @@ console.log(arrProduct);
 // створити функцію, яка отримує як аргумент массив і вираховує середнє значення всіх чисел (при розрахунках вважайте, що массив може бути будь-якої довжини переданий)
 
 let sum = 0;
-function average() {
-    for (i = 0; i < arrRandomNumbers.length; i++){
-        let a = arrRandomNumbers[i];
+let averageValue = 0;
+function average(argument) {
+    for (i = 0; i < argument.length; i++){
+        let a = argument[i];
         sum+= a;
     }
-   return sum/arrRandomNumbers.length;
+    averageValue = sum/argument.length;
+    return averageValue;
 }
-console.log(average())
+console.log(average(arrRandomNumbers))
 
 // створити функцію, яка замінює в массиві =) на;)
 
