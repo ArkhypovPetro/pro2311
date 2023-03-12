@@ -1,0 +1,54 @@
+body{
+    background-color: darkgrey;
+}
+form{
+    max-width: 500px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    border-radius: 12px;
+    padding: 10px;
+}
+.title{
+    color: #fff;
+    font-size: 45px;
+}
+
+.item-confirm-pass{
+    margin-bottom: 40px;
+}
+
+input{
+    background-color: #000;
+    border-radius: 12px;
+    border: 1px solid rgb(97, 57, 167);
+    margin-top: 10px;
+    padding: 10px;
+    width: 300px;
+    color: #fff;
+}
+::placeholder{
+    color: #fff;
+}
+button{
+    color: #fff;
+    background-color: rgb(68, 5, 157);
+    margin-top: 10px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+button:hover{
+    background-color: rgb(126, 16, 228);
+}
+
+
+.block{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}

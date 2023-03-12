@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Document</title>
+    <script src="./js/index_2.js"></script>
+</head>
+
+<body>
+    <form>
+        <select class="form-select form-select-lg mb-2 pizzatype" aria-label=".form-select-sm">
+            <option selected>Виберіть тип начинки піцци</option>
+            <option value="1" class="type1"></option>
+            <option value="2" class="type2"></option>
+            <option value="3" class="type3">Якась трава</option>
+        </select>
+        <select class="form-select form-select-sm mb-4 pizzasize" aria-label=".form-select-lg">
+            <option selected>Виберіть розмір піцци</option>
+            <option value="1" class="size1"></option>
+            <option value="2" class="size2"></option>
+            <option value="3" class="size3"></option>
+        </select>
+
+        <div class="d-flex justify-content-between">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="mashrooms">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Гриби
+                </label>
+            </div>
+            <p class="fs-5 mb-0">+10 грн</p>
+        </div>
+        <div class="d-flex justify-content-between">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="cheese">
+                <label class="form-check-label" for="flexCheckDefault" >
+                    Сир
+                </label>
+            </div>
+            <p class="fs-5 mb-0">+10 грн</p>
+        </div>
+        <div class="d-flex justify-content-between">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="sosige">
+                <label class="form-check-label" for="flexCheckDefault" >
+                    Ковбаска
+                </label>
+            </div>
+            <p class="fs-5 mb-5">+10 грн</p>
+        </div>
+
+        <div class="d-flex justify-content-between">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="delivery">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Доставка
+                </label>
+            </div>
+            <p class="fs-5 mb-0">+30 грн</p>
+        </div>
+            <div class="form-check mb-5">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="self" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Самовивіз
+                </label>
+            </div>
+
+            <div class="d-flex justify-content-between">
+                <p class="fs-2 price"></p>
+                <button type="button" class="btn btn-success buy" data-bs-toggle="modal" data-bs-target="#modal" disabled>
+                    Замовити
+                </button>
+            </div>
+    </form>
+
+    <div class="modal fade show" id="exampleModalLg" tabindex="-1" aria-labelledby="exampleModalLgLabel" aria-modal="true" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title h4" id="exampleModalLgLabel">Дякуємо! Ваше замовлення опрацьовується</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+</body>
+</html>
